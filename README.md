@@ -8,4 +8,7 @@ The dataset used is a preprocessed version of the Natural Scenes Dataset (NSD), 
 
 1. Noise Celing for individual subjects - nc_<sub_id>.npy
 2. Noise Celing for all subjects that are valid (greater than 0) - noise_ceiling_1257_filtered.npy
-3. 
+3. Dictionary containing coco ids as the key with subject responses as values (coco_id : {subject_id : fmri_response}) -
+   1. <brain_region>.pickle - responses for all voxels for all subjects
+   2. <brain_region>_1257.pickle - responses for all voxels for subjects 1,2,5 and 7
+   3. <brain_region>_1257_filtered.pickle - esponses for voxels with valid noise celings for subjects 1,2,5 and 7

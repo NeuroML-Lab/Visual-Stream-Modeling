@@ -85,3 +85,5 @@ python3 language_stimuli.py --brain_region "brain_region" --readout "readout" --
 The test correlations are saved inside directory evaluations, and the individual correlations per valid voxel is saved in directory evaluations_paper.
 
 ## Pycortex Visualisations - 
+
+A sample visualisation is explained inside the notebook 'plots.ipynb' for subject 1.

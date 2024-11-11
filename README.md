@@ -86,4 +86,4 @@ The test correlations are saved inside directory evaluations, and the individual
 
 ## Pycortex Visualisations - 
 
-A sample visualisation is explained inside the notebook 'plots.ipynb' for subject 1.
+A sample visualisation is explained inside the notebook 'plots.ipynb' for subject 1. The same process has to be repeated when comparing any pairs of encoders or readouts, while making sure to maintain the proper indices for the various subjects.

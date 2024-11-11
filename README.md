@@ -25,7 +25,7 @@ In order to train response optimized models with visual input -
 python3 vanilla_training.py --brain_region "brain_region" --readout "readout" --alpha "only_for_linear_ridge_regression_readouts" --task_optimised_model "resnet50 or alexnet"
 ```
 
-Readouts can have the following values - linear_ridge, semantic_transformer, spatial_linear and gaussian2d. Each of them are explained in more details in section 2.2. The alpha values is only used in case of the linear_ridge readout. Brain regions can have the following values - V1v_data, V2v_data, V3v_data, V1d_data, V2d_data, V3d_data, v4_data, ventral_visual_data, dorsal_visual_data and lateral_visual_data. The trained model are stored inside the directory 'outputs_paper'. 
+Readouts can have the following values - linear_ridge, semantic_transformer, spatial_linear and gaussian2d. Each of them are explained in more details in section 2.2. The alpha values is only used in case of the linear_ridge readout. Brain regions can have the following values - V1v_data, V2v_data, V3v_data, V1d_data, V2d_data, V3d_data, v4_data, ventral_visual_data, dorsal_visual_data and lateral_visual_data.
 
 In order to train task optimized models with visual input - 
 
@@ -38,6 +38,19 @@ In case you want to use only the first n layers of task optimized models, use th
 ```bash
 python3 task_optimised_baselines.py --brain_region "brain_region" --readout "readout" --alpha "only_for_linear_ridge_regression_readouts" --task_optimised_model "resnet50 or alexnet" --use_sub_layers --sub_layers n
 ```
+
+In order to models with single caption language input (only linear_ridge readouts in this case) -
+
+```bash
+python3 language_stimuli.py --brain_region "brain_region" --alpha "float value" --llm_encoder "clip or mpnet" --training_type only_single_captions
+```
+
+In order to models with dense caption language input -
+
+```bash
+python3 language_stimuli.py --brain_region "brain_region" --readout "readout" --alpha "only_for_linear_ridge_regression_readouts" --llm_encoder "clip or mpnet" --training_type only_dense_captions
+```
+ The trained model are stored inside the directory 'outputs_paper'. 
 
 ## Evaluation
 

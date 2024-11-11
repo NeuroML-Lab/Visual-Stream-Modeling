@@ -17,6 +17,8 @@ The dataset used is a preprocessed version of the Natural Scenes Dataset (NSD), 
 3. train, val and test splits - <brain_region>_splits_1257.pickle
 4. response sizes or number of voxels per subject - <brain_region>_resp_sizes_1257_filtered.npy
 
+There will be a seperate folder called 'images' with MS-COCO images used in the NSD experiments.
+
 ## Training
 
 In order to train response optimized models with visual input - 
@@ -59,7 +61,6 @@ In order to evaluate response optimized models with visual input -
 ```bash
 python3 vanilla_training.py --brain_region "brain_region" --readout "readout" --alpha "only_for_linear_ridge_regression_readouts" --evaluate
 ```
-The test correlations are saved inside directory evaluations, and the individual correlations per valid voxel is saved in directory evaluations_paper.
 
 In order to evaluate task optimized models with visual input - 
 
@@ -70,5 +71,17 @@ python3 task_optimised_baselines.py --brain_region "brain_region" --readout "rea
 ```bash
 python3 task_optimised_baselines.py --brain_region "brain_region" --readout "readout" --alpha "only_for_linear_ridge_regression_readouts" --task_optimised_model "resnet50 or alexnet" --use_sub_layers --sub_layers n --evaluate
 ```
+
+In order to evaluate models with language input - 
+
+```bash
+python3 language_stimuli.py --brain_region "brain_region" --alpha "float value" --llm_encoder "clip or mpnet" --training_type only_single_captions --evaluate
+```
+
+```bash
+python3 language_stimuli.py --brain_region "brain_region" --readout "readout" --alpha "only_for_linear_ridge_regression_readouts" --llm_encoder "clip or mpnet" --training_type only_dense_captions --evaluate
+```
+
+The test correlations are saved inside directory evaluations, and the individual correlations per valid voxel is saved in directory evaluations_paper.
 
 ## Pycortex Visualisations - 

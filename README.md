@@ -19,8 +19,16 @@ The dataset used is a preprocessed version of the Natural Scenes Dataset (NSD), 
 
 ## Training
 
+In order to train response optimized models with visual input - 
+
 ```bash
-sss
+python3 vanilla_training.py --brain_region <brain_region> --readout <readout> --alpha <only for linear ridge regression readouts>
 ```
 
+Readouts can have the following values - linear_ridge, semantic_transformer, spatial_linear and gaussian2d. Each of them are explained in more details in section 2.2. The alpha values is only used in case of the linear_ridge readout. Brain regions can have the following values - 
+
 ## Evaluation
+
+```bash
+python3 vanilla_training.py --brain_region <brain_region> --readout <readout> --alpha <only for linear ridge regression readouts> --evaluate
+```

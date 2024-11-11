@@ -57,3 +57,5 @@ python3 task_optimised_baselines.py --brain_region "brain_region" --readout "rea
 ```bash
 python3 task_optimised_baselines.py --brain_region "brain_region" --readout "readout" --alpha "only_for_linear_ridge_regression_readouts" --task_optimised_model "resnet50 or alexnet" --use_sub_layers --sub_layers n --evaluate
 ```
+
+## Pycortex Visualisations - 

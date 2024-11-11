@@ -47,3 +47,13 @@ In order to evaluate response optimized models with visual input -
 python3 vanilla_training.py --brain_region "brain_region" --readout "readout" --alpha "only_for_linear_ridge_regression_readouts" --evaluate
 ```
 The test correlations are saved inside directory evaluations, and the individual correlations per valid voxel is saved in directory evaluations_paper.
+
+In order to evaluate task optimized models with visual input - 
+
+```bash
+python3 task_optimised_baselines.py --brain_region "brain_region" --readout "readout" --alpha "only_for_linear_ridge_regression_readouts" --task_optimised_model "resnet50 or alexnet" --evaluate
+```
+
+```bash
+python3 task_optimised_baselines.py --brain_region "brain_region" --readout "readout" --alpha "only_for_linear_ridge_regression_readouts" --task_optimised_model "resnet50 or alexnet" --use_sub_layers --sub_layers n --evaluate
+```

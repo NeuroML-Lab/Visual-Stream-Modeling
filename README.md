@@ -16,3 +16,11 @@ The dataset used is a preprocessed version of the Natural Scenes Dataset (NSD), 
    3. <brain_region>_1257_filtered.pickle - esponses for voxels with valid noise celings for subjects 1,2,5 and 7
 3. train, val and test splits - <brain_region>_splits_1257.pickle
 4. response sizes or number of voxels per subject - <brain_region>_resp_sizes_1257_filtered.npy
+
+## Training
+
+```bash
+sss
+```
+
+## Evaluation

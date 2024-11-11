@@ -4,7 +4,7 @@ This repository contains the code for the following paper - [Modeling the Human 
 
 ## Dataset
 
-The dataset used is a preprocessed version of the Natural Scenes Dataset (NSD), and experiments are done only using 4 (1,2,5 and 7) of the 8 subjects. The preprocessed version will be uploaded soon. Create a folder 'data' and store the downloaded dataset inside this folder. Each dataset folder is named after a specific region of the visual cortex and contain the following files - 
+The dataset used is a preprocessed version of the Natural Scenes Dataset (NSD), and experiments are done only using 4 (1,2,5 and 7) of the 8 subjects. The preprocessed version can be downloaded from [here](https://osf.io/wh35d/?view_only=202cd5926f094b2693095f744ffdafbc). Create a folder 'data' and store the downloaded dataset inside this folder. Each dataset folder is named after a specific region of the visual cortex and contain the following files - 
 
 1. Noise Celing
    1. individual subjects - nc_<sub_id>.npy
